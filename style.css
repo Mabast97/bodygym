@@ -98,12 +98,13 @@ body{
     height: 600px; width: 100%;
     background-color: #ececec;
     position: relative;
-    z-index: -1;
+    z-index: -2;
     margin-top: -230px;
 }
 
 #backgroundSection{
     position: absolute;
+    z-index: -2;
 }
 /* End Of Background Div  */
  
@@ -111,14 +112,14 @@ body{
 
 #lastPart{
     background-image: linear-gradient(to right, white, #cfcfcf);
-    z-index: -2;
+    z-index: 1;
 }
 
 #leftImage{
     position: absolute;
     top: -50px;
     left: 0px;
-    z-index: 0;
+    z-index: 1;
 }
 
 #rightTexts{
@@ -174,6 +175,9 @@ body{
     outline: none;
     background-color: whitesmoke;
     height: 45px;
+    padding-left: 15px;
+    font-size: 1.1em;
+    font-weight: 500;
 }
 
 #ll{ 
@@ -198,7 +202,13 @@ body{
     padding-bottom: 250px;
 }
 
+#displayFlex{
+    display: flex;
+}
 
+.t-right{
+    text-align: right;
+}
 
 @media only screen and (max-width: 950px)
 {
@@ -255,12 +265,68 @@ body{
         width: 80%; 
         height: 45px;
         display: block;
+        border: 2px solid lightgray;
     }
     
     #ll{   
         width: 53px; height: 44px;
         margin-top: 20px;
     }
+
+#leftImage{
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    z-index: 1;
+}
+
+#rightTexts{ 
+    width: 85%; height: 400px; 
+    padding: 6% 2% 15% 25%;
+} 
+
+
+#bg{
+    height: 0; width: 100%; 
+    margin-top: 0px;
+    display: none;
+}
+
+#backgroundSection{
+    position: absolute;
+    z-index: -2;
+    display: none;
+}
+
+
+}
+
+@media only screen and (max-width: 582px)
+{
+    
+#rightTexts{ 
+    width: 100%; height: 400px; 
+    padding: 20px;
+}
+
+#displayFlex {
+    flex-direction: column-reverse;
+}
+
+#leftImage{
+    position: relative;
+    top: 0px;
+    text-align: center;
+    width: 90%;
+}
+
+#leftImage img{ width: 90%; height: 500px;}
+
+.t-right{
+    text-align: left;
+}
+
+
 
 }
 
