@@ -1,0 +1,273 @@
+body{ 
+    overflow-x: hidden;
+}
+
+/* HEADER */
+#header{
+    background-image: url(image2.jpg);
+    width: 100%; height: 680px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+#cover{
+    height: 100%; width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+}
+
+#title{
+    font-weight: 400;
+    letter-spacing: 8px;
+}
+
+#button1{
+    width: 130px; 
+    background-color: #004777;
+}
+
+.bg-light-gray{
+    background-color: #f7f7f7;
+}
+
+.my-border-right{
+    border-right: 2px solid #f0f0f0;
+}
+/* END Of HEADER */
+
+
+/* After About Us Part */
+
+#leftPartOfAfterAboutUsPart{ 
+    width: 350px; 
+}
+
+#hihi{
+    position: relative;
+    padding-top: 150px;
+}
+
+#rightImage img{
+    width:27rem; height: 500px;
+}
+
+#rightImage{
+    position: absolute;
+    z-index: 1;
+    right: -160px;
+    top: 50px;
+}
+
+#dots-image{
+    position: absolute;
+    right: 190px;
+    bottom: -100;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* ------------------------------- */
+#threeImages{
+    margin-top: 300px;
+
+}
+
+.t h5{
+    color: #014475;
+    border-left: 8px solid #014475;
+}
+
+.padding-left{
+    padding-left: 33px;
+}
+ 
+.p{
+    padding-top: 8%;
+}
+
+/* End Of After About Us Part */
+
+
+/* Background Div  */
+
+#bg{
+    height: 600px; width: 100%;
+    background-color: #ececec;
+    position: relative;
+    z-index: -1;
+    margin-top: -230px;
+}
+
+#backgroundSection{
+    position: absolute;
+}
+/* End Of Background Div  */
+ 
+
+
+#lastPart{
+    background-image: linear-gradient(to right, white, #cfcfcf);
+    z-index: -2;
+}
+
+#leftImage{
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    z-index: 0;
+}
+
+#rightTexts{
+    background-color: #003151;
+    color: rgb(216, 216, 216);
+    width: 85%; height: 400px;
+    margin-left: auto;
+    margin-right: -1%;
+    padding: 6% 22% 5%;
+}
+
+#dots-image2{
+    position: absolute;  
+    top: 300px;
+    left: -35px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.my-border-left{
+    border-left: 2px solid #f0f0f0;
+}
+
+/* What We Offer Part */
+
+#whatWeOffer{
+    margin-top: 200px;
+}
+
+.c{
+    color: #034c7c;
+}
+
+
+
+
+/*  Footer   */
+
+#footer{
+    margin-left: auto; 
+    background-image: linear-gradient(to right, #d3d3d3, #ffffff);
+}
+
+#myButton{
+    color: rgb(0, 189, 252);
+    border: none; 
+    background-color: #e9e9e9;
+}
+
+#length{ 
+    width: 40%;
+    border: none;
+    outline: none;
+    background-color: whitesmoke;
+    height: 45px;
+}
+
+#ll{ 
+    margin-left: -52px;
+    margin-top: -5px;
+    width: 43px; height: 44px;
+    background-color: #004777;
+    color: white;
+    font-size: 30px;
+    padding: 0;
+}
+
+#dots-image3{
+    position: absolute;  
+    bottom: -150px;
+    left: 10px;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.p-buttom{
+    padding-bottom: 250px;
+}
+
+
+
+@media only screen and (max-width: 950px)
+{
+    #rightImage img{
+        width:19rem; height: 400px;
+    }
+    
+    #rightImage{
+        position: absolute;
+        z-index: 1;
+        right: -160px;
+        top: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    #rightImage img{
+        width:100%; height: 350px;
+    }
+    
+    #rightImage{
+        position: relative;
+        z-index: 1;
+        right: 0; top: 0px;
+    }
+
+    #leftPartOfAfterAboutUsPart{ 
+        width: 90%; 
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #dots-image{
+        position: absolute;
+        right: 0%;
+        bottom: 0;
+        z-index: -1;
+        opacity: 0.5;
+        display: none;
+    } 
+
+    #dots-image2, #dots-image3{ 
+    display: none;
+}
+
+    #hihi{
+        position: relative;
+        padding-top: 10px;
+    }
+
+    #length{ 
+        width: 80%; 
+        height: 45px;
+        display: block;
+    }
+    
+    #ll{   
+        width: 53px; height: 44px;
+        margin-top: 20px;
+    }
+
+}
+
+  
+
+
+
+
+
+
